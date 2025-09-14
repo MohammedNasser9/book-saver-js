@@ -5,7 +5,7 @@ Users can add website names with URLs, open them directly, or remove them from t
 All bookmarks are stored in **localStorage**, so they remain even after refreshing the page.
 
 ## 🚀 Live Demo  
-[Book Saver on Vercel](https://your-vercel-link.vercel.app/)
+[Book Saver on Vercel](https://book-saver-js.vercel.app/)
 
 ## 📖 Features
 - Add bookmarks with a name and valid URL.
