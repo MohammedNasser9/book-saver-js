@@ -1,0 +1,114 @@
+*{
+    margin: 0; padding: 0;
+    border:none; outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box ;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(-45deg,#c3ccc6,#d2ebbd,#cce7ab);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    flex-grow:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.container .saver{
+    width: min(100%,400px);
+    background-color: #fff;
+    border: 1px solid #efefef;
+    box-shadow: 0 6px 12px rgba(0,0,0,.3);
+    padding: 15px 10px;
+    border-radius: 12px;
+}
+.container .saver .title{
+    color: #57b86a;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+@media(max-width:388px){
+    .container .saver .title{
+        font-size: 28px;
+    }
+}
+.container .saver input{
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #aca7a25d;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    caret-color: green;
+}
+.container .saver input:focus{
+    border: 2px solid black;
+}
+/* .container .saver input:focus::placeholder{
+} */
+.saver .btn-shape{
+    color: white;
+    background: linear-gradient(135deg,#09c926,#09c926d8);
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.container .saver #add-btn:hover{
+    background: linear-gradient(135deg,#0a751a,#077a17d8);
+    scale: .95;
+}
+.container .saver ul{
+    list-style-type: none;
+    overflow-y: auto;
+    max-height: 300px;
+}
+.container .saver ul li{
+    border-radius: 8px;
+    padding: 10px;
+    border:1px solid #aca7a27c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.container .saver ul li a{
+    display: block;
+    color: #25ca46;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+.container .saver ul li .remove-btn{
+    color: white;
+    background-color: rgb(175, 37, 37);
+    cursor: pointer;
+    transform: .3s;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+.container .saver ul li .remove-btn:hover{
+    background-color: rgb(109, 3, 3);
+}
+.saver #delete-all {
+    color: white;
+    background-color: rgb(175, 37, 37);
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    font-weight: 500;
+}
+#delete-all:hover {
+    background-color: rgb(109, 3, 3);
+}
